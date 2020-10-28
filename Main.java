@@ -1,12 +1,18 @@
-import java.util.Arrays;
-
+import java.lang.StrictMath;
 public class Main {
 
-    //access modifier keyword to determine what classes and can access methods and attributes
+ 
     public static void main(String[] args) {
-    int x = 1;
-    x -= 2;
-    System.out.println(x);
+        int max = 10;
+    int min = 1;
+    int range = max - min + 1;
+     
+    for (int i = 0; i < 10; i++) {
+        int rand = (int) (Math.random() * range) + min;
+
+      System.out.println(rand);
+    }
+
     
 
 }
