@@ -1,19 +1,19 @@
 public class Main {
    
     public static void main(String[] args) {
-        String role = "admin";
+        int number; 
 
-        switch (role) {
-            case "admin":
-            System.out.println("you're an admin");
-            break;
-            case "moderator":
-            System.out.println("youre a moderator");
-            default:
-            System.out.println("you're a guest");
+        for ( number = 1; number < 21; number++) {
+        if (number % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (number % 5 == 0) {
+            System.out.println("Buzz");
+        } else if ( number % 3 == 0 && number % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else {
+            System.out.println(number);
         }
-
-     
-      
+    }
+  
     } 
 }
