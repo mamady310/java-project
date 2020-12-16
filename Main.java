@@ -1,11 +1,18 @@
 public class Main {
    
     public static void main(String[] args) {
-     
-      int income = 90_000; 
-      String className = income > 100_000 ? "first" : "economy";
+        String role = "admin";
 
-      System.out.println(className);
+        switch (role) {
+            case "admin":
+            System.out.println("you're an admin");
+            break;
+            case "moderator":
+            System.out.println("youre a moderator");
+            default:
+            System.out.println("you're a guest");
+        }
+
      
       
     } 
