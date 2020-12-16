@@ -1,17 +1,12 @@
-
 public class Main {
    
     public static void main(String[] args) {
      
-        int temp = 32;
-        if( temp > 30) {
-        System.out.println("its a hot day");
-        } else if (temp > 20) {
-        System.out.println("Beautiful day"); 
-        } else {
-        System.out.println("cold da");
-        }
+      int income = 90_000; 
+      String className = income > 100_000 ? "first" : "economy";
 
-
+      System.out.println(className);
+     
+      
     } 
 }
