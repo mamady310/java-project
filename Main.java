@@ -9,12 +9,12 @@ public class Main {
         while (!input.equals("quit")) {
         System.out.print("Input: ");
         input = scanner.next().toLowerCase();
+        if (input.equals("pass"))
+            continue;
         if (input.equals("quit"))
             break;
         System.out.println(input);
-  
     } 
-
 }
 }
 
