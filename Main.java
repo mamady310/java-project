@@ -6,12 +6,19 @@ public class Main {
         String input = "";
         Scanner scanner = new Scanner(System.in);
 
-        while (!input.equals("quit")) {
+    //     while (!input.equals("quit")) {
+    //     System.out.print("Input: ");
+    //     input = scanner.next().toLowerCase();
+    //     System.out.println(input);
+  
+    // } 
+
+    do {
         System.out.print("Input: ");
         input = scanner.next().toLowerCase();
-        System.out.println(input);
-  
-    } 
+        System.out.println(input);  
+
+    } while (!input.equals("quit"));
 }
 
 }
